@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --primcolor: #1e8670;
+  --secondcolor: rgb(22, 106, 88);
+  --thrdcolor: #daab14;
+  --colortext: #ff0404;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+span {
+  color: var(--colortext);
+  font-weight: 900;
+}
+body {
+  background-color: var(--primcolor);
+  min-height: 900px;
+  font-family: "ubuntu", sans-serif;
+}
+.container-nav {
+  background-color: rgb(0, 0, 0);
+  backdrop-filter: blur(8px);
+  /* box-shadow: 0 20px 30px rgba(22, 106, 15); */
+  box-shadow: inset;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+.navbar-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px;
+  padding-top: 10px;
+}
+.nav-brand-nav {
+  margin-top: 10px;
+  color: white;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  list-style: none;
+}
+.navigation li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+}
+.navigation li a:hover {
+  color: var(--colortext);
+}
+/* Aside */
+aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: var(--primcolor);
+  border: 2px solid white;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+aside .social-media li {
+  list-style-type: none;
+}
+
+aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+aside .social-media li a:hover {
+  color: #89b0d9;
+}
+/* End Aside */
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 5rem 4rem;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.content .content-description {
+  flex: 1 1;
+  color: white;
+}
+.content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+.content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+.content .content-description button {
+  padding: 10px 15px;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+
+  border: 2px solid var(--colortext);
+  border-radius: 80px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.content .content-description button:hover {
+  color: #ffffff;
+  background-color: var(--colortext);
+}
+.content .content-image {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.content .content-image img {
+  margin: auto;
+  margin-top: 40px;
+  min-width: 250px;
+  width: 100%;
+}
+.div-1 {
+  background-color: white;
+  margin-top: 40px;
+  height: 550px;
+}
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 30px;
+}
+.h1-content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.img {
+  width: 300px;
+}
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+.content-1 p {
+  padding: 10px 0;
+}
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+.content-2 p {
+  padding: 10px 0;
+}
+.content-3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+.content-3 p {
+  padding: 10px 0;
+}
+.btn-img {
+  padding: 1px;
+  margin-block-start: 0.5rem;
+  width: 60%;
+  text-transform: capitalize;
+  font-weight: 70;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  margin: auto;
+
+  border-radius: 50px;
+  border: none;
+  background-color: var(--primcolor);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.h1-hub-kami {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+}
+.class-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-contact {
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 300px;
+  height: 30px;
+}
+textarea {
+  height: 100px;
+  width: 300px;
+  resize: none;
+  margin-bottom: 10px;
+}
+.btn-submit {
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  background-color: #0dbdf3;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+footer {
+  color: var(--primcolor);
+  margin-top: 20px;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+}
+.copyright {
+  margin-left: 110px;
+}
