@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
-  --primcolor: #1e8670;
+  --primcolor: #4b4646;
   --secondcolor: rgb(22, 106, 88);
   --thrdcolor: #daab14;
-  --colortext: #ff0404;
+  --colortext: #e04b4b;
 }
 * {
   box-sizing: border-box;
@@ -95,6 +95,10 @@ aside .social-media li a {
 aside .social-media li a:hover {
   color: #89b0d9;
 }
+
+aside .img-aside {
+  height: 100px;
+}
 /* End Aside */
 main {
   max-width: 1200px;
@@ -104,6 +108,7 @@ main {
   flex: 1;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .content {
@@ -262,13 +267,118 @@ textarea {
   border-radius: 10px;
 }
 footer {
-  color: var(--primcolor);
+  color: white;
   margin-top: 20px;
   width: 100%;
-  background-color: white;
+  background-color: var(--primcolor);
   height: 50px;
   padding-top: 15px;
 }
 .copyright {
   margin-left: 110px;
+}
+
+/* Desktop layout */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  /* .container-nav */
+  .container-nav {
+    height: 80px;
+  }
+  
+  /* .navigation */
+  .navigation {
+    margin-top: 0;
+  }
+
+  /* .content */
+  .content {
+    margin-top: 100px;
+    flex-direction: row;
+  }
+
+  /* .content-description */
+  .content-description {
+    padding: 0 50px;
+  }
+
+  /* .content-image */
+  .content-image img {
+    min-width: 300px;
+  }
+
+  /* .div-1 */
+  .div-1 {
+    height: auto;
+  }
+
+  /* .container-2 */
+  .container-2 {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+
+  /* .class-form */
+  .class-form {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+}
+
+/* Mobile layout */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* .container-nav */
+  .container-nav {
+    height: 60px;
+  }
+  
+  /* .navigation */
+  .navigation {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .content */
+  .content {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .content-description */
+  .content-description {
+    padding: 0 20px;
+  }
+
+  /* .content-image */
+  .content-image img {
+    min-width: 200px;
+  }
+
+  /* .div-1 */
+  .div-1 {
+    height: auto;
+  }
+
+  /* .container-2 */
+  .container-2 {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .class-form */
+  .class-form {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
