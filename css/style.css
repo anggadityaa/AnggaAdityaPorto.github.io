@@ -273,6 +273,8 @@ footer {
   background-color: var(--primcolor);
   height: 50px;
   padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .copyright {
   margin-left: 110px;
